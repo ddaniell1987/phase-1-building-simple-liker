@@ -2,7 +2,35 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
-// Your JavaScript code goes here!
+const like = document.querySelectdorAll(".like-glyph");
+
+for(const glyph of heart) {
+  glyph.addEventListener("click", mimicServerCall())
+  .then((serverMessage) => {
+    document.getElementById(".like-glyph").addEventListener(".activated-heart");
+    alert(severMessage);
+    heart.innerText = glyphStates[heart.innerText];
+    heart.style.color = colorStates[heart.style.color];
+
+  })
+  .catch((error) => {
+    //find the modal element update the class of the element remove the hidden class
+    const errorMessage = document.getElementById("modal")
+    console.log(errorMessage)
+    errorMessage.className = "show"
+   setTimeout(function(){
+     const errorMessage = document.getElementById("modal")
+     console.log(errorMessage)
+     errorMessage.classname = "hidden"}, 3000)}
+   
+    /* document.getElementById(".modal").remove("hidden");
+    setTimeout(function(){
+    document.getElementById(".modal").addEventListener("hidden");
+    }, 3000);
+    $('#modal-message').modal('hide');*/
+  
+  )}
+console.log(heart);
 
 
 
